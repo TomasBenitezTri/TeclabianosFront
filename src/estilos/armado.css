@@ -1,0 +1,75 @@
+@font-face{
+	font-family: "fuente1";
+	src: url(Louis_George_Cafe_Bold.ttf);
+}
+
+@font-face{
+	font-family: "fuente2";
+	src: url(Louis_George_Cafe_Light.ttf);
+}
+
+body{
+    background: rgb(196, 235, 240);
+}
+#root{
+    font-family: "fuente1";
+}
+.caja_general{
+    display: flex;
+    justify-content: center;
+}
+.Footer, .Nav, .Header{
+    text-align: center;
+    width: 80%;
+    margin: 10px;
+}
+/* Ordenamos de arriba hacia abajo */
+.Header{
+    font-size: 80px;
+}
+
+.Nav{
+    display: Flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: black;
+    background: rgb(176, 176, 241);
+}
+
+.cajanav{
+    padding: 10px;
+
+}
+
+.cajanav:hover{
+    background: linear-gradient( rgb(196, 235, 240),rgb(170, 170, 244) );
+    
+}
+
+.cajanavlink{
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(69, 27, 27);
+}
+
+@media screen and (max-width: 490px) {
+    .Header {
+    font-size:40px;
+    }
+    .cajanavlink{
+    font-size: 20px;
+    }
+}
+
+/* Home */
+.caja_general_home{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+p{
+    margin: auto;
+    padding: 13px;
+    font-size: 23px;
+}
+

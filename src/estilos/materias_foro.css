@@ -1,0 +1,132 @@
+/* Materias */
+.materias{
+    display: flex;
+    flex-direction: column;
+}
+.cajamaterias{
+    display: flex;
+    justify-content: center;
+}
+
+.atras_materias{
+    color: black;
+    padding: 3px;
+    text-decoration: none;
+    background: rgb(190, 190, 240);
+    border-radius: 5px;
+}
+
+.caja_materias{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    padding: 5px;
+    background: rgb(190, 190, 240);
+    margin: 5px;
+    border-radius: 5px;
+}
+.caja_materias:hover{
+    background: linear-gradient( rgb(196, 235, 240),rgb(169, 169, 244) );
+}
+
+/* Foro */
+.foro{
+    display:flex;
+    flex-direction: column;
+}
+
+.tabla{
+    width: 80%;
+    margin: auto;
+}
+.nombre_comentario{
+    background: white;
+}
+.nombre_comentario2{
+    background: rgb(156, 223, 244);
+}
+
+.boton_comentar{
+    margin: auto;
+    font-family: 'fuente1';
+    font-size: 30px;
+    text-decoration: none;
+    background:rgb(132, 132, 243) ;
+    padding: 10px;
+    color: rgb(69, 27, 27);
+    border-radius: 5px;
+}
+
+
+.nombre_comentario2{
+    border-radius: 20px;
+}
+
+.comentario{
+    margin: 10px;
+    display: flex;
+}
+
+.usuario_foro{
+    margin:5px;
+    font-family: 'fuente1';
+    font-size: 30px;
+}
+
+/* Crear comentario*/
+
+.CrearComentario{
+    margin: auto;
+    width: 400px;
+}
+
+.formulario_crear_comentario{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border: solid 1px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.caja_nombre_crear_comentario{
+    margin: auto;
+}
+
+.caja_comentario_crear_comentario{
+    margin: auto;
+}
+
+.boton_crear_comentario{
+    margin: auto;
+    text-decoration: none;
+    background:rgb(169, 169, 244) ;
+    padding: 10px;
+    color: rgb(69, 27, 27);
+    border-radius: 5px;
+    font-family: 'fuente1';
+    font-size: 25px;
+    border: none;
+}
+
+.letras_crear_formulario{
+    margin: 5px;
+}
+
+.textarea_formulario_nombre{
+    resize:none;
+    border: none;
+    padding: 10px;
+    width: 300px;
+}
+
+.textarea_formulario{
+    resize:none;
+    border: none;
+    padding: 15px;
+    width: 300px;
+    height: 100px;
+}
+
+
+

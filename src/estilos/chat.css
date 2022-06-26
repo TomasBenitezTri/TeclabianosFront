@@ -46,12 +46,17 @@ a{
 
 /* M E S S A G E S */
 
+.usuario_foro{
+    margin:5px;
+    font-family: 'fuente1';
+    font-size: 20px;
+}
+
 .chat {
     list-style: none;
     background: none;
-    margin-left: -85px;
-    margin-top: 10px;
-
+    margin-left: -55px;
+    margin-top: 0px;
 }
 
 .chat li {
@@ -72,10 +77,8 @@ a{
 .other:before {
     content: "";
     position: relative;
-    top: 0px;
     right: 0px;
     left: 40px;
-    width: 0px;
     height: 0px;
     border: 5px solid #fff;
     border-left-color: transparent;
@@ -110,18 +113,17 @@ a{
 
 .msg {
     background: white;
-    min-width: 50px;
     padding: 10px;
     border-radius: 2px;
     box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.07);
 }
 .msg p {
-    font-size: 25px;
+    font-size: 17px;
     font-family: 'fuente2';
+    max-width: 700px;
     font-weight: bold;
     margin: 0 0 0.2rem 0;
     color: black;
-    max-width: 700px;
 }
 .msg img {
     position: relative;
@@ -172,24 +174,32 @@ input.textarea {
     color: rgb(20, 181, 2);
 }
 
+.tabla{
+    width: 80%;
+    margin: auto;
+}
+
 @media screen and (max-width: 1391px) {
     .comentario{
         flex-direction: column;
     }
     .msg p {
-        max-width: 250px;
+        font-size:15px;
+        max-width: 650px;
     }
+
 }
 
 @media screen and (max-width: 450px) {
     .usuario_foro{
-        font-size: 20px;
+        font-size: 17px;
     }
     .msg p {
     font-size:15px;
+    max-width: 200px;
     }
-    .msg p {
-        max-width: 200px;
+    .tabla{
+        width: 99%;
     }
 }
 

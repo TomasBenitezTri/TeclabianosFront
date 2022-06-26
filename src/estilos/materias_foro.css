@@ -35,10 +35,7 @@
     flex-direction: column;
 }
 
-.tabla{
-    width: 80%;
-    margin: auto;
-}
+
 .nombre_comentario{
     background: white;
 }
@@ -67,17 +64,13 @@
     display: flex;
 }
 
-.usuario_foro{
-    margin:5px;
-    font-family: 'fuente1';
-    font-size: 30px;
-}
+
 
 /* Crear comentario*/
 
 .CrearComentario{
     margin: auto;
-    width: 400px;
+    width: 700px;
 }
 
 .formulario_crear_comentario{
@@ -125,7 +118,7 @@
     border: none;
     padding: 15px;
     width: 300px;
-    height: 100px;
+    height: 350px;
 }
 
 

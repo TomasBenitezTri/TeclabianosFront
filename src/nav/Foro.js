@@ -2,7 +2,7 @@ import axios from 'axios'
 import { React, useState, useEffect } from 'react'
 import {NavLink} from 'react-router-dom'
 
-const URI = 'http://localhost:8000/blogs/'
+const URI = 'https://backend-teclabianos.herokuapp.com/'
 
 const Foro = () => {
     const [blogs, setBlog] = useState([])

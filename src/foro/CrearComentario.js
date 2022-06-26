@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 
 
-const URI = 'http://localhost:8000/blogs/'
+const URI = 'https://backend-teclabianos.herokuapp.com/'
 
 const CrearComentario = () => {
     const [title, setTitle] = useState ('')

@@ -9,7 +9,7 @@ const Experienciadeusuario = (props) => {
             Experiencia de usuario
         </p>
         <div className="cajamaterias">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/sAZ2A1bztwQ" ></iframe>
+        <iframe className="video_materias" width="560" height="315" src="https://www.youtube.com/embed/sAZ2A1bztwQ" ></iframe>
         </div>
         </div>
     );

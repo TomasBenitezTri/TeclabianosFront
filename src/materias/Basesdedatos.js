@@ -9,7 +9,7 @@ const Basesdedatos = (props) => {
             Bases de datos
         </p>
         <div className="cajamaterias">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/knVwokXITGI" ></iframe>
+        <iframe className="video_materias" width="560" height="315" src="https://www.youtube.com/embed/knVwokXITGI" ></iframe>
         </div>
         </div>
     );

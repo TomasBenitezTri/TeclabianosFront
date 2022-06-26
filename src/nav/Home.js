@@ -7,7 +7,7 @@ const Home = (props) => {
         <p>
             Bienvenido a la página Teclabianos! 
         </p>
-        <p>⚡ Aquí podrá estudiar, comertar y compartir la 
+        <p>⚡ Aquí podrá aprender, comertar y compartir la 
         experiencia en el Instituto Teclab ⚡
         </p>
         <p>

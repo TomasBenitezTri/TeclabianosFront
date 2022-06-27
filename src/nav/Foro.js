@@ -5,14 +5,28 @@ import {NavLink} from 'react-router-dom'
 const URI = 'https://backend-teclabianos.herokuapp.com/'
 
 const Foro = () => {
-    const [blogs, setBlog] = useState([])
-    useEffect( ()=>{
-     getBlogs()
-    },[])
+    const [loading, setLoading] = useState([false]);
+    const [blogs, setBlog] = useState([]);
     
+    useEffect( ()=>{
+        const cargarBlog = async () => {
+            setLoading(true)
+            
+            const res = await axios.get(URI)
+            setBlog(res.data)
+
+            setLoading(false)
+        };
+        cargarBlog();
+    },[]);
+
+    {/*}
     const getBlogs = async () => {
+
         const res = await axios.get(URI)
-        setBlog(res.data)}
+        setBlog(res.data)
+    
+    */}
     
     {/*const deleteBlog = async (id) => {
         await axios.delete(`${URI}${id}`)
@@ -30,7 +44,8 @@ const Foro = () => {
                     <th>Actions</th>
                 </tr>
             </thead>*/}
-                {blogs.map ( (blog) => (
+                {loading?( <p className='fallback'>Cargando foro...</p> ) : ( 
+                    blogs.map ( (blog) => (
                         <div key={blog.id} className='nombre_comentario2'>
                             <div className='comentario'>
                                 <div className='usuario_foro'><i class="fa-solid fa-masks-theater"></i> {blog.title}</div>
@@ -50,12 +65,12 @@ const Foro = () => {
                             <button onClick={()=> deleteBlog(blog.id)}>Delete</button>
                             </td>*/}
                         </div>
-                    ) )
+                    ) ) )
                 }
         </table>
         <NavLink to="/create" className='boton_comentar'>Comentar</NavLink>
         </div>
     )
 }
-export default Foro
+export {Foro}
 

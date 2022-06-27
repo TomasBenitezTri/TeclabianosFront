@@ -1,4 +1,4 @@
-import {React, lazy, Suspense} from 'react';
+import {React} from 'react';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 import {Basesdedatos} from './materias/Basesdedatos';
@@ -11,8 +11,7 @@ import {Footer} from './armado/Footer';
 import {CrearComentario} from './foro/CrearComentario';
 import {CompEditBlog} from './foro/EditBlog';
 
-/*import {Foro} from './nav/Foro';*/
-const Foro = lazy(()=>import('./nav/Foro'));
+import {Foro} from './nav/Foro';
 
 
 
@@ -25,15 +24,7 @@ function App() {
       <Routes>
           <Route path='/' element = {<Home/>} />
           <Route path='/materias' element = {<Materias/>}/>
-          
-          <Route 
-          path='/foro' 
-          element = {
-          <Suspense fallback={<h1 className="fallback">Cargando foro...</h1>}>
-            <Foro/>
-          </Suspense>
-          }/>
-          
+          <Route path='/foro' element = {<Foro/>}/>
           
           {/*Rutas de las materias*/}
           <Route path='/materias/ux' element = {<Experienciadeusuario/>} />

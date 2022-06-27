@@ -29,7 +29,7 @@ function App() {
           <Route 
           path='/foro' 
           element = {
-          <Suspense fallback={<h1>Cargando foro...</h1>}>
+          <Suspense fallback={<h1 className="fallback">Cargando foro...</h1>}>
             <Foro/>
           </Suspense>
           }/>

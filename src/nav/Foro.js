@@ -57,5 +57,5 @@ const Foro = () => {
         </div>
     )
 }
-export {Foro}
+export default Foro
 

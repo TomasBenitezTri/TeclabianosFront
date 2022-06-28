@@ -44,7 +44,17 @@ const Foro = () => {
                     <th>Actions</th>
                 </tr>
             </thead>*/}
-                {loading?( <p className='fallback'>Cargando foro...</p> ) : ( 
+                {loading?( <p className='fallback'>Cargando foro 
+                
+                <div class="carga">
+        <div class="bola"></div>
+        <div class="bola"></div>
+        <div class="bola"></div>
+        <div class="bola"></div>
+        <div class="bola"></div>
+            </div>
+
+                </p> ) : ( 
                     blogs.map ( (blog) => (
                         <div key={blog.id} className='nombre_comentario2'>
                             <div className='comentario'>

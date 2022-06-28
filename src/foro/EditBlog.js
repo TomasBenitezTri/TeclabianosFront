@@ -7,8 +7,10 @@ const URI = 'https://backend-teclabianos.herokuapp.com/'
 const CompEditBlog = () => {
     const [title, setTitle] = useState ('')
     const [content, setContent] = useState('')
+
     const navigate = useNavigate()
     const id = useParams()
+    
     const update = async (e) => {
         await axios.put(URI+id, {
             title: title,
@@ -25,6 +27,7 @@ const CompEditBlog = () => {
         setTitle(res.data.title)
         setContent(res.data.content)
     }
+    
     return(
         <div className='editar_comentario'>
             <form onSubmit={update}>

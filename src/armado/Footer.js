@@ -7,13 +7,10 @@ const Footer = (props) =>{
             Designed by: Tomas Benitez
 
             <div> 
-            <a href= 'https://www.instagram.com/tomas.benitez13/' 
-            style={{ textDecoration: 'none', color: 'blue'}} target = '_BLANK' > Instagram </a>
+            <a href= 'https://www.linkedin.com/in/tomas-benitez-2a2a3118b/' 
+            style={{ textDecoration: 'none', color: 'blue'}} target = '_BLANK' > LinkedIn </a>
             </div>
             
-            <div> 
-            <a href= 'https://www.facebook.com/profile.php?id=100008295554789' style={{ textDecoration: 'none', color: 'blue'}} target = '_BLANK' > Facebook </a>
-            </div>
             <div> 
             <a href= 'https://expertobacktomasb.herokuapp.com/admin/login' style={{ textDecoration: 'none', color: 'blue'}} target = '_BLANK' > Node </a>
             </div>

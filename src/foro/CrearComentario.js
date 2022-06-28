@@ -3,8 +3,6 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { NavLink } from 'react-router-dom';
 
-
-
 const URI = 'https://backend-teclabianos.herokuapp.com/'
 
 const CrearComentario = () => {

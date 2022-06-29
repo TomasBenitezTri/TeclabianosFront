@@ -57,7 +57,10 @@ const Foro = () => {
                     ) ) ) 
                 }
         </table>
-        <NavLink to="/create" className='boton_comentar'>Comentar</NavLink>
+        <NavLink to="/create" className='boton_comentar'>Comentar</NavLink> 
+        <div className='face'>
+        <div class="fb-comments" data-href="https://www.facebook.com/plugins/feedback.php?app_id=1030030761163201&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df152036081187b%26domain%3Dwww.c5n.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.c5n.com%252Ff2b92d540e424%26relation%3Dparent.parent&amp;color_scheme=dark&amp;container_width=660&amp;height=100&amp;href=https%3A%2F%2Fwww.c5n.com%2Fc18163&amp;locale=es_LA&amp;mobile=true&amp;numposts=5&amp;sdk=joey&amp;version=v9.0&amp;width" data-width="320px" data-numposts="5"></div>
+        </div>
         </div>
     )
 }

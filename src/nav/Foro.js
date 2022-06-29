@@ -7,7 +7,7 @@ const URI = 'https://backend-teclabianos.herokuapp.com/'
 const Foro = () => {
     const [loading, setLoading] = useState([false]);
     const [blogs, setBlog] = useState([]);
-    
+
     useEffect( ()=>{
         const cargarBlog = async () => {
             setLoading(true)
@@ -19,11 +19,6 @@ const Foro = () => {
         };
         cargarBlog();
     },[]);
-
-    {/*const deleteBlog = async (id) => {
-        await axios.delete(`${URI}${id}`)
-        getBlogs()
-    */}
 
     return(
         <div className='foro'>
@@ -52,19 +47,14 @@ const Foro = () => {
                                             <div class="msg">
                                             
                                             <p className='p_comentario'>{blog.content}</p>
-
-                                            {/*<NavLink to={`/edit/${blog.id}`}>Edit</NavLink>*/}
                                             
                                             <time>{blog.createdAt}</time>
                                         </div>
                                     </li>
                                 </ol>
-                            </div>
-                            
-                            {/* <button onClick={()=> deleteBlog(blog.id)}>Delete</button> */}
-   
+                            </div>  
                         </div>
-                    ) ) )
+                    ) ) ) 
                 }
         </table>
         <NavLink to="/create" className='boton_comentar'>Comentar</NavLink>

@@ -9,8 +9,6 @@ import {Home} from './nav/Home';
 import {Materias} from './nav/Materias';
 import {Footer} from './armado/Footer';
 import {CrearComentario} from './foro/CrearComentario';
-import {CompEditBlog} from './foro/EditBlog';
-
 import {Foro} from './nav/Foro';
 
 
@@ -32,7 +30,6 @@ function App() {
 
           {/* Rutas Foro */}
           <Route path='/create' element = {<CrearComentario/>}/>
-          <Route path='/edit/:id' element = {<CompEditBlog/>}/>
       </Routes>
       <Footer/>
     </Router>

@@ -7,21 +7,27 @@ const Footer = (props) =>{
             Designed by: Tomas Benitez
 
             <div> 
+            <a href= 'https://cafecito.app/tomasbenitez' style={{ textDecoration: 'none', color: 'blue'}} target = '_BLANK' className='back_icono' ><i class="fa-solid fa-hand-holding-dollar"></i>  </a>
+            </div>
+            <div className='iconos_footer'>
             <a href= 'https://www.linkedin.com/in/tomas-benitez-2a2a3118b/' 
-            style={{ textDecoration: 'none', color: 'blue'}} target = '_BLANK' > LinkedIn </a>
-            </div>
-            
-            <div> 
-            <a href= 'https://expertobacktomasb.herokuapp.com/admin/login' style={{ textDecoration: 'none', color: 'blue'}} target = '_BLANK' > Node </a>
-            </div>
-            <div> 
+            style={{ textDecoration: 'none', color: 'blue'}} target = '_BLANK' className='back_icon'> <i class="fa-brands fa-linkedin"></i></a>
+
             <a href= 'https://tomasbeniteztri.github.io/React/' 
-            style={{ textDecoration: 'none', color: 'blue'}} target = '_BLANK' > React </a>
+            style={{ textDecoration: 'none', color: 'blue'}} target = '_BLANK' className='back_icon'> <i class="fa-brands fa-react"></i> </a>
+ 
+            <a href= 'https://relatosdeportistas.000webhostapp.com/index.php' style={{ textDecoration: 'none', color: 'blue'}} target = '_BLANK' className='back_icon'> <i class="fa-brands fa-php"></i> </a>
+
+            <a href= 'https://github.com/TomasBenitezTri' style={{ textDecoration: 'none', color: 'blue'}} target = '_BLANK' className='back_icon'> <i class="fa-brands fa-github"></i> </a>
+            
+            <a href= 'https://expertobacktomasb.herokuapp.com/admin/login' style={{ textDecoration: 'none', color: 'blue'}} target = '_BLANK' className='back_icon'> <i class="fa-brands fa-node"></i> </a>
+            
+            
+
             </div>
-            <div> 
-            <a href= 'https://relatosdeportistas.000webhostapp.com/index.php' style={{ textDecoration: 'none', color: 'blue'}} target = '_BLANK' > PHP </a>
             </div>
-            </div>
+
+
 
         </div>
     );

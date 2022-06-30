@@ -15,11 +15,14 @@ body{
     font-family: "fuente1";
 }
 
-.face{
-    margin: 10px;
+.linea{
     border: solid 1px;
+    margin: 20px;
 }
-
+.disqus{
+    margin: auto;
+    width: 50%;
+}
 .caja_general{
     display: flex;
     justify-content: center;
@@ -58,12 +61,48 @@ body{
     color: rgb(69, 27, 27);
 }
 
+/* Footer */
+
+.Footer{
+    margin-top: 100px;
+}
+
+.fa-brands{
+    font-size: 30px;
+    margin: 15px;
+}
+
+.fa-hand-holding-dollar{
+    font-size: 30px;
+    margin: 5px;
+    color:rgb(103, 240, 160);
+}
+
+.iconos-footer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.back_icon:hover{
+    border-radius: 10px;
+    padding: 10px;
+    background: rgb(170, 170, 244);
+}
+.back_icono:hover{
+    border-radius: 10px;
+    padding: 10px;
+    background: rgb(44, 44, 240);
+}
+
 @media screen and (max-width: 490px) {
     .Header {
     font-size:40px;
     }
     .cajanavlink{
     font-size: 20px;
+    }
+    .disqus{
+        width: 90%;
     }
 }
 

@@ -8,7 +8,7 @@ const Materias = (props) => {
         <div className='materias'>
             <div className='cajamaterias'> <NavLink to='/materias/bd' className='caja_materias'> Bases de datos </NavLink> </div>
             <div className='cajamaterias'> <NavLink to='/materias/ux' className='caja_materias'> Experiencia de usuario </NavLink> </div>
-            <div className='cajamaterias'> <NavLink to='/materias/log' className='caja_materias'> Logica de programacion </NavLink> </div>
+            <div className='cajamaterias'> <NavLink to='/materias/log' className='caja_materias'> Lógica de programación </NavLink> </div>
         </div>
 
     );

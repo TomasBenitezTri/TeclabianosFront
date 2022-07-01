@@ -1,6 +1,7 @@
 import axios from 'axios'
-import { React, useState, useEffect } from 'react'
+import { React, useState, useEffect, Component } from 'react'
 import {NavLink} from 'react-router-dom'
+import Utterances from "utterances-react"
 
 const URI = 'https://backend-teclabianos.herokuapp.com/'
 
@@ -19,6 +20,7 @@ const Foro = () => {
         };
         cargarBlog();
     },[]);
+
 
     return(
         <div className='foro'>
@@ -61,5 +63,6 @@ const Foro = () => {
         </div>
     )
 }
+
 export {Foro}
 

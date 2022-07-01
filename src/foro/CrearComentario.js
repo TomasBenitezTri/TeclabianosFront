@@ -11,9 +11,9 @@ const CrearComentario = () => {
     const navigate = useNavigate()
 
     const store = async (e) => {
-        e.preventDefault()
-        await axios.post(URI, {title: title, content: content})
-        navigate('/foro')
+        e.preventDefault();
+        await axios.post(URI, {title: title, content: content});
+        navigate('/foro');
     }
     
     return(

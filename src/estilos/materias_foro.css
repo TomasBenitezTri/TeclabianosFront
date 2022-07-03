@@ -37,22 +37,20 @@
     
 }
 
-
 /* Foro */
-
-
 
 .foro{
     display:flex;
     flex-direction: column;
 }
 
-
-.nombre_comentario{
-    background: white;
+.comentario{
+    display: flex;
 }
+
 .nombre_comentario2{
-    background: rgb(156, 223, 244);
+    background: rgb(205, 205, 246);
+    margin: 3px;
 }
 
 .boton_comentar{
@@ -65,15 +63,8 @@
     color: rgb(69, 27, 27);
     border-radius: 5px;
 }
-
-
-.nombre_comentario2{
-    border-radius: 20px;
-}
-
-.comentario{
-    margin: 10px;
-    display: flex;
+.boton_comentar:hover{
+    background: rgb(0, 255, 64);
 }
 
 /* Animaciones css*/ 

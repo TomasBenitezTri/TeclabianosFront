@@ -13,6 +13,7 @@ import {Materias} from './nav/Materias';
 import {Footer} from './armado/Footer';
 import {CrearComentario} from './foro/CrearComentario';
 import {Foro} from './nav/Foro';
+import {Commentario} from './giscus/giscus';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
 
           {/* Rutas Foro */}
           <Route path='/create' element = {<CrearComentario/>}/>
+          <Route path='/giscus' element = {<Commentario/>}/>
       </Routes>
       <Footer/>
     </Router>

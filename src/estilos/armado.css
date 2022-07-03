@@ -94,7 +94,7 @@ body{
     background: rgb(44, 44, 240);
 }
 
-.discus{
+.giscus{
     margin: auto;
     width: 80%;
 }
@@ -104,6 +104,11 @@ body{
     }
     .cajanavlink{
     font-size: 20px;
+    }
+
+    .Footer, .Nav, .Header{
+        width: 95%;
+        margin: 5px;
     }
 
 }

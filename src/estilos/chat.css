@@ -55,8 +55,9 @@ a{
 .chat {
     list-style: none;
     background: none;
-    margin-left: -55px;
+    margin-left: -90px;
     margin-top: 0px;
+    margin-bottom: -5px;
 }
 
 .chat li {
@@ -177,12 +178,11 @@ input.textarea {
 .tabla{
     width: 80%;
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 @media screen and (max-width: 1391px) {
-    .comentario{
-        flex-direction: column;
-    }
     .msg p {
         font-size:15px;
         max-width: 650px;
@@ -199,7 +199,7 @@ input.textarea {
     max-width: 200px;
     }
     .tabla{
-        width: 99%;
+        width: 95%;
     }
 }
 

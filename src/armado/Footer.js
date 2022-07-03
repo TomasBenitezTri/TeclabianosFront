@@ -16,7 +16,7 @@ const Footer = (props) =>{
             <a href= 'https://tomasbeniteztri.github.io/React/' 
             style={{ textDecoration: 'none', color: 'blue'}} target = '_BLANK' className='back_icon'> <i class="fa-brands fa-react"></i> </a>
  
-            <a href= 'https://relatosdeportistas.000webhostapp.com/index.php' style={{ textDecoration: 'none', color: 'blue'}} target = '_BLANK' className='back_icon'> <i class="fa-brands fa-php"></i> </a>
+            <a href= 'https://tomasbenitez.000webhostapp.com/' style={{ textDecoration: 'none', color: 'blue'}} target = '_BLANK' className='back_icon'> <i class="fa-brands fa-php"></i> </a>
 
             <a href= 'https://github.com/TomasBenitezTri' style={{ textDecoration: 'none', color: 'blue'}} target = '_BLANK' className='back_icon'> <i class="fa-brands fa-github"></i> </a>
             

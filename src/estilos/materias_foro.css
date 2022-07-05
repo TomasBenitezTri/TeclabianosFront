@@ -44,17 +44,31 @@
     flex-direction: column;
 }
 
+.tabla{
+    justify-content: center;
+    
+}
+
 .comentario{
     display: flex;
 }
 
 .nombre_comentario2{
     background: rgb(205, 205, 246);
-    margin: 3px;
+    margin: 1.5px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+}
+
+.caja_boton_foro{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .boton_comentar{
-    margin: auto;
+    width: 150px;
     font-family: 'fuente1';
     font-size: 30px;
     text-decoration: none;

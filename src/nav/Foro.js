@@ -59,7 +59,9 @@ const Foro = () => {
                     ) ) ) 
                 }
         </table>
+        <div className='caja_boton_foro'>
         <NavLink to="/create" className='boton_comentar'>Comentar</NavLink> 
+        </div>
         </div>
     )
 }

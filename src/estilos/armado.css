@@ -7,22 +7,18 @@
 	font-family: "fuente2";
 	src: url(Louis_George_Cafe_Light.ttf);
 }
-
-body{
-    background: rgb(196, 235, 240);
-}
 #root{
     font-family: "fuente1";
+    background: linear-gradient( rgb(235, 243, 250),rgb(230, 212, 250));
+
 }
 
-.linea{
-    border: solid 1px;
-    margin: 20px;
-}
 .disqus{
     margin: auto;
     width: 50%;
+    background: linear-gradient( rgb(211, 242, 246),rgb(184, 184, 246))
 }
+
 .caja_general{
     display: flex;
     justify-content: center;
@@ -75,7 +71,7 @@ body{
 .fa-hand-holding-dollar{
     font-size: 30px;
     margin: 5px;
-    color:rgb(103, 240, 160);
+    color:rgb(0, 212, 0);
 }
 
 .iconos-footer{

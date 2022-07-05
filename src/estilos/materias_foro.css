@@ -2,6 +2,7 @@
 .materias{
     display: flex;
     flex-direction: column;
+    margin-bottom: 150px;
 }
 .cajamaterias{
     display: flex;
@@ -34,6 +35,9 @@
         width:300px; 
         height:160px;
     }
+    .caja_materias{
+        font-size: 20px;
+    }
     
 }
 
@@ -44,10 +48,6 @@
     flex-direction: column;
 }
 
-.tabla{
-    justify-content: center;
-    
-}
 
 .comentario{
     display: flex;
@@ -205,6 +205,10 @@
         border-radius: 50%;
         margin: 2px;
         
+    }
+
+    .nombre_comentario2{
+        background: none;
     }
 }
 

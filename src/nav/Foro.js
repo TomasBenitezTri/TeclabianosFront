@@ -1,70 +1,15 @@
-import axios from 'axios'
-import { React, useState, useEffect, Component } from 'react'
-import {NavLink} from 'react-router-dom'
-import Utterances from "utterances-react"
+import Giscus from 'react-giscus';
 
-const URI = 'https://backend-teclabianos.herokuapp.com/'
+import React from "react";
 
-const Foro = () => {
-    const [loading, setLoading] = useState([false]);
-    const [blogs, setBlog] = useState([]);
-
-    useEffect( ()=>{
-        const cargarBlog = async () => {
-            setLoading(true)
-            
-            const res = await axios.get(URI)
-            setBlog(res.data)
-
-            setLoading(false)
-        };
-        cargarBlog();
-    },[]);
-
-
-    return(
-        <div className='foro'>
-
-        <table className='tabla'>
-                {loading?( <p className='fallback'>Cargando foro 
-                
-                <div class="carga">
-                    <div class="bola"></div>
-                    <div class="bola"></div>
-                    <div class="bola"></div>
-                    <div class="bola"></div>
-                    <div class="bola"></div>
-                </div>
-
-                </p> ) : ( 
-                    blogs.map ( (blog) => (
-                        <div key={blog.id} className='nombre_comentario2'>
-                            <div className='comentario'>
-                                <div className='usuario_foro'>
-                                    <i class="fa-solid fa-masks-theater"></i> {blog.title}
-                                </div>
-                                <ol class="chat">
-                                    <li class="other">
-                                        <div class="avatar"> </div>
-                                            <div class="msg">
-                                            
-                                            <p className='p_comentario'>{blog.content}</p>
-                                            
-                                            <time>{blog.createdAt}</time>
-                                        </div>
-                                    </li>
-                                </ol>
-                            </div>  
-                        </div>
-                    ) ) ) 
-                }
-        </table>
-        <div className='caja_boton_foro'>
-        <NavLink to="/create" className='boton_comentar'>Comentar</NavLink> 
-        </div>
-        </div>
-    )
+export function Commentario1(){
+    return( <Giscus className="giscus"
+        repo="TomasBenitezTri/TeclabianosFront"
+        repoId="R_kgDOHj0JCA"
+        category="General"
+        categoryId="DIC_kwDOHj0JCM4CP_dU"
+        mapping="pathname"
+        theme="light"
+        reactionsEnabled="0" />
+    );
 }
-
-export {Foro}
-

@@ -7,7 +7,7 @@ const Footer = (props) =>{
             Designed by: Tomas Benitez
 
             <div> 
-            <a href= 'https://cafecito.app/tomasbenitez' style={{ textDecoration: 'none', color: 'blue'}} target = '_BLANK' className='back_icono' ><i class="fa-solid fa-hand-holding-dollar"></i>  </a>
+            <a href= 'https://cafecito.app/tomasbenitez' style={{ textDecoration: 'none', color: 'blue'}} target = '_BLANK' className='back_icono' > <i class="fa-solid fa-hand-holding-dollar"></i>  </a>
             </div>
             <div className='iconos_footer'>
             <a href= 'https://www.linkedin.com/in/tomas-benitez-2a2a3118b/' 
